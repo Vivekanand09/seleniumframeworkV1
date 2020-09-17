@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="seleniumframeworkV1">
+	<listeners>
+		<listener class-name="com.framework.utilities.Reporting" />
+	</listeners>
+
+	<!--	<test name="Banking App Test">
+		<parameter name="browser" value ="firefox" />
+		<classes>
+			<class name ="com.framework.testCases.TC_Login_001"/>
+		</classes>
+	</test> -->
+	<test name="Banking App Test chrome">
+		<parameter name="browser" value ="chrome" />
+		<classes>
+			<class name ="com.framework.testCases.TC_Login_001"/>
+			<class name ="com.framework.testCases.TC_Login_DDT_002"/> 
+			<class name ="com.framework.testCases.TC_Add_Customer_003"/>
+		</classes>
+	</test>
+	<!--  <test name="Banking App Test edge">
+		<parameter name="browser" value ="edge" />
+		<classes>
+			<class name ="com.framework.testCases.TC_Login_001"/>
+		</classes>
+	</test>-->
+</suite>
